@@ -4,14 +4,16 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import NavLink from "./components/NavLink";
 
-/* =========================
-   MAIN APP (All Exercises)
-========================= */
-
 function App() {
   return (
     <>
+      {/* Header at TOP */}
+      <Header />
+
       <h1>Week 3 Tasks</h1>
+
+      {/* Exercise 4 */}
+      <NavLink />
 
       {/* Exercise 1 */}
       <button className="btn">Click Me</button>
@@ -20,12 +22,8 @@ function App() {
       <StatusCard type="success" />
       <StatusCard type="error" />
 
-      {/* Exercise 3 */}
-      <Header />
+      {/* Footer at BOTTOM */}
       <Footer />
-
-      {/* Exercise 4 */}
-      <NavLink />
     </>
   );
 }
